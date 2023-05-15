@@ -1,5 +1,7 @@
 import './globals.css'
 import { Montserrat_Alternates } from 'next/font/google'
+import LayoutHeader from '@/app/LayoutHeader'
+import LayoutFooter from '@/app/LayoutFooter'
 
 const mont = Montserrat_Alternates({
     weight: "500",
@@ -21,7 +23,11 @@ export default function RootLayout(
 ) {
     return (
         <html lang="de">
-            <body className={mont.className}>{children}</body>
+            <body className={mont.className}>
+            <LayoutHeader />
+            {children}
+            <LayoutFooter />
+            </body>
         </html>
     )
 }

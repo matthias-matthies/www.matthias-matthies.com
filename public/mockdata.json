@@ -1,0 +1,14 @@
+{
+  "projects": [
+    {
+      "name": "Automated YouTube Videos",
+      "description": "Automating Story Telling YouTube Videos using Elevenlabs, OpenAI, Remotion and Python",
+      "tags": "AI; Elevenlabs; OpenAI; React; Python"
+    },
+    {
+      "name": "Legendary Rolls",
+      "description": "Tool to create Characters in D&D 5e using the legendary Rolls rule",
+      "tags": "HTML; JavaScript; CSS; GitHub"
+    }
+  ]
+}
