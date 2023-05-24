@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Home() {
     const currentSemester: Number = 2
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
+        <main className="flex min-h-screen flex-col items-center justify-between">
             <div className='px-16 flex items-center justify-between h-screen'>
                 <div className='w-1/2'>
                     <AnimatedImage src={heroImage} alt="Digital Art - Developer created by Midjourney" />
