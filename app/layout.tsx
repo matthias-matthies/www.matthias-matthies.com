@@ -1,15 +1,10 @@
 import './globals.css'
-import { Montserrat_Alternates } from 'next/font/google'
 import LayoutHeader from '@/app/LayoutHeader'
 import LayoutFooter from '@/app/LayoutFooter'
-
-const mont = Montserrat_Alternates({
-    weight: "500",
-    subsets: ["latin"]
-})
+import React from 'react'
 
 export const metadata = {
-    title: 'Website Title',
+    title: 'Matthias Matthies',
     description: 'Website Description',
 }
 
@@ -23,7 +18,7 @@ export default function RootLayout(
 ) {
     return (
         <html lang="de">
-            <body className={mont.className}>
+            <body className="font-mont">
             <LayoutHeader />
             {children}
             <LayoutFooter />

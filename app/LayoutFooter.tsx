@@ -1,7 +1,9 @@
+import LegalsNavBar from '@/app/LegalsNavBar'
+
 const LayoutFooter = () => {
     return (
         <footer>
-            Legals
+            <LegalsNavBar />
         </footer>
     )
 }
