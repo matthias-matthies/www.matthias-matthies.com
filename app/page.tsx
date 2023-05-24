@@ -18,7 +18,7 @@ export default function Home() {
                         text='Matthias Matthies, Informatik Student, Fullstack-Entwickler, Sport-Enthusiast'
                     />
                     <p>
-                        Moin! Mein Name ist Matthias und ich befinde mich aktuell im <b>{currentSemester}</b>.
+                        Moin! Mein Name ist Matthias und ich befinde mich aktuell im <b>{currentSemester.toString()}</b>.
                         Semester meines Informatikstudiums an der <Link target="_blank" className="text-blue-500" href="https://www.uni-bremen.de">Universität Bremen</Link>. Zusätzlich arbeite ich als Entwickler bei der <Link className="text-blue-500" href="https://www.k-evolution.de" target="_blank">K-Evolution GmbH</Link> in Sittensen.
                         In meiner Freizeit widme ich mich gerne sportlichen Aktivitäten und arbeite nebenbei an einigen privaten <Link className="text-blue-500" href="/projects">Programmierprojekten</Link>.
                     </p>
