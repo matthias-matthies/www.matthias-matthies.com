@@ -10,7 +10,7 @@ interface ProjectCardProps {
     tags?: string[];
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({name, thumbnail, description, href, tags}) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({name, thumbnail, description, href, tags = []}) => {
     return (
         <div
             className="flex flex-row border border-black rounded-2xl p-12 gap-4"
