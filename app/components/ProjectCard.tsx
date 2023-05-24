@@ -1,6 +1,7 @@
 import React from 'react'
 import Image, {StaticImageData} from 'next/image'
 import Link from 'next/link'
+import {GitHubIcon} from '@/app/components/BrandIcon'
 
 interface ProjectCardProps {
     name: string;
@@ -38,7 +39,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({name, thumbnail, description, 
                 >
                     {name}
                 </h3>
-                <p>Kurzfassung: {description}</p>
+                <p>{description}</p>
             </div>
         </div>
     )
