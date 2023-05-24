@@ -1,10 +1,10 @@
-import './blog.css'
+import './projects.css'
 export const metadata = {
     title: 'Blog Title',
     description: 'Website Blog Description',
 }
 
-export default function BlogLayout(
+export default function ProjectsLayout(
     {
         children
     }:
