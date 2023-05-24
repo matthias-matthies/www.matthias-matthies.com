@@ -1,6 +1,5 @@
-import Image from 'next/image'
-import AnimatedHeading from "@/app/AnimatedHeading";
-import AnimatedImage from "@/app/AnimatedImage";
+import AnimatedHeading from "@/app/components/AnimatedHeading";
+import AnimatedImage from "@/app/components/AnimatedImage";
 import heroImage from "@/public/developer.png"
 import Link from "next/link";
 

@@ -1,13 +1,9 @@
 const ImprintPage = () => {
     return (
-        <main>
+        <main className="container mx-auto">
                 <p>
-                    Name: Matthias Matthies
-
-                    Adresse: Hinter der Mühle 5a, 27419 Tiste
-
-                    Land: Deutschland
-
+                    Name: Matthias Matthies <br />
+                    Land: Deutschland<br />
                     Kontakt: info@matthias-matthies.com
                 </p>
         </main>

@@ -1,4 +1,4 @@
-import NavBar from '@/app/NavBar'
+import NavBar from '@/app/components/NavBar'
 
 const LayoutHeader = () => {
     return (

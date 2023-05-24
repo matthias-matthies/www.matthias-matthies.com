@@ -1,12 +1,12 @@
-import NavLink from '@/app/NavLink'
+import NavLink from '@/app/components/NavLink'
 import React from 'react'
-import IconLink from '@/app/IconLink'
-import {GitHubIcon, LinkedInIcon, TwitterIcon} from '@/app/BrandIcon'
+import IconLink from '@/app/components/IconLink'
+import {GitHubIcon, LinkedInIcon, TwitterIcon} from '@/app/components/BrandIcon'
 
 const NavBar: React.FC = () => {
     return (
         <div
-            className="w-full px-32 py-8 font-medium flex items-center justify-between"
+            className="w-full container mx-auto py-8 font-medium flex items-center justify-between"
         >
             <nav>
                 <NavLink href="/" title="Home" className="mr-4"/>

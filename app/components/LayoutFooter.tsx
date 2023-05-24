@@ -1,4 +1,4 @@
-import LegalsNavBar from '@/app/LegalsNavBar'
+import LegalsNavBar from '@/app/components/LegalsNavBar'
 
 const LayoutFooter = () => {
     return (

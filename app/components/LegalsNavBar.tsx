@@ -1,10 +1,10 @@
 import React from 'react'
-import NavLink from '@/app/NavLink'
+import NavLink from '@/app/components/NavLink'
 
 const LegalsNavBar: React.FC = () => {
     return (
         <div
-            className="w-full px-32 py-8 font-medium flex items-center justify-between text-xs"
+            className="w-full container mx-auto py-8 font-medium flex items-center justify-between text-xs"
         >
             <p>
 
