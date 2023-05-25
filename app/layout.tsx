@@ -2,6 +2,7 @@ import './globals.css'
 import LayoutHeader from '@/app/components/LayoutHeader'
 import LayoutFooter from '@/app/components/LayoutFooter'
 import React from 'react'
+import TransitionEffect from "@/app/components/TransitionEffect";
 
 export const metadata = {
     title: 'Matthias Matthies',

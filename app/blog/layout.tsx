@@ -1,4 +1,5 @@
 import './blog.css'
+import TransitionEffect from "@/app/components/TransitionEffect";
 export const metadata = {
     title: 'Blog Title',
     description: 'Website Blog Description',
