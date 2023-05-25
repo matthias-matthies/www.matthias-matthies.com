@@ -29,9 +29,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({name, thumbnail, description, 
             <div
                 className="w-1/2"
             >
-                <p className="my-4 text-blue-500">
+                <p className="my-4 text-blue-500 flex flex-wrap">
                     {
-                        tags.map((tag, index) => <span className="mr-2 border border-blue-500 cursor-pointer p-1 rounded" key={index}>{tag}</span>)
+                        tags.map((tag, index) => <span className="mr-2 my-1 border border-blue-500 cursor-pointer p-1 rounded" key={index}>{tag}</span>)
                     }
                 </p>
                 <h3
