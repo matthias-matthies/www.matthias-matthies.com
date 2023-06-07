@@ -1,19 +1,19 @@
 import React from 'react'
 import ProjectCard from '@/app/components/ProjectCard'
-import {StaticImageData} from 'next/image'
-import matthiasMatthiesWebsiteThumbnail from "@/public/matthias-matthies-website-thumbnail.png"
-const ProjectsList: React.FC = () => {
-    const projects = [
-        {
-            description: "Erstellung einer interaktiven Webseite mit Next.js, Locomotive Scroll, Framer Motion und Tailwind CSS. Die Webseite wurde auf Vercel gehostet und nutzt eine CI/CD-Pipeline, die auf GitHub und Vercel basiert, um automatische Bereitstellungen und kontinuierliche Integration zu ermöglichen. Die Pipeline gewährleistet eine effiziente Entwicklung und ein nahtloses Deployment.",
-            name: "Webseite Matthias Matthies",
-            thumbnail: matthiasMatthiesWebsiteThumbnail,
-            href: `/projects/website-matthias-matthies`,
-            tags: [
-                "Nextjs", "Vercel", "Tailwindcss", "GitHub", "Webdesign"
-            ]
-        }
-    ]
+
+interface ProjectObject {
+    name: string;
+    github_url: string;
+    slug: string;
+    description: string;
+    thumbnail: string;
+    language: string;
+}
+
+interface ProjectListProps {
+    projects: ProjectObject[]
+}
+const ProjectsList: React.FC<ProjectListProps> = ({projects}) => {
     return (
         <div
             className="w-full container mx-auto py-8 font-medium flex items-center justify-between"
@@ -23,11 +23,11 @@ const ProjectsList: React.FC = () => {
                     return (
                         <li key={index}>
                             <ProjectCard
-                                tags={project.tags}
+                                language={project.language}
                                 description={project.description}
                                 name={project.name}
                                 thumbnail={project.thumbnail}
-                                href={project.href}
+                                slug={project.slug}
                             />
                         </li>
                     )
