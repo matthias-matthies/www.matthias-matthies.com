@@ -8,10 +8,11 @@ interface ProjectCardProps {
     thumbnail: string;
     description: string;
     slug: string;
+    github_url: string;
     language?: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({name, thumbnail, description, slug, language}) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({name, thumbnail, description, slug, github_url, language}) => {
     return (
         <div
             className="flex flex-row border border-black rounded-2xl p-12 gap-4"
@@ -29,24 +30,31 @@ const ProjectCard: React.FC<ProjectCardProps> = ({name, thumbnail, description, 
             <div
                 className="w-1/2"
             >
-                <p className="my-4 text-blue-500 flex flex-wrap">
-                    {/*
-                        tags.map((tag, index) => <span className="mr-2 my-1 border border-blue-500 cursor-pointer p-1 rounded" key={index}>{tag}</span>)
-                    */}
-                </p>
                 {
                     language
-                        ? (<p className="my-4 text-blue-500 flex flex-wrap">
+                        ? (<p className="my-4 text-blue-500">
                             <span className="mr-2 my-1 border border-blue-500 cursor-pointer p-1 rounded">{language}</span>
                         </p>)
-                        : ("")
+                        : ""
                 }
                 <h3
-                    className={`inline-block w-full text-dark font-bold text-3xl 2xl:text-6xl`}
+                    className="my-4 text-dark font-bold text-3xl 2xl:text-6xl"
                 >
                     {name}
                 </h3>
-                <p>{description}</p>
+                <p>
+                    {description}
+                </p>
+                <p
+                    className="my-4"
+                >
+                    <a
+                        className="my-1 border border-blue-500 cursor-pointer p-1 rounded text-blue-500"
+                        href={github_url}
+                    >
+                        Source Code
+                    </a>
+                </p>
             </div>
         </div>
     )

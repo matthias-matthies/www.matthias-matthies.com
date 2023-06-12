@@ -7,7 +7,6 @@ export default function ProjectsPage({params}: {params: {repository?: string;}})
         <main>
             <AnimatedHeading text={"Tue, was du liebst, liebe, was du tust."} className="text-left"/>
             {params.repository}
-            <ProjectsList />
         </main>
     )
 }
