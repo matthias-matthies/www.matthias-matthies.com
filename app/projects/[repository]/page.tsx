@@ -1,12 +1,21 @@
-import ProjectsList from '@/app/components/ProjectsList'
 import AnimatedHeading from '@/app/components/AnimatedHeading'
+import React from 'react'
 
 
-export default function ProjectsPage({params}: {params: {repository?: string;}}) {
+
+const getProjectDetails = async (repository: string) => {
+    const res = await fetch(`https://raw.githubusercontent.com/matthias-matthies/${repository}/main/.matthias-matthies/Blog.json`);
+    const json = await res.json()
+    return json
+}
+
+export default async function ProjectPage({params}: {params: {repository: string;}}) {
+    const projectDetails = await getProjectDetails(params.repository)
+
     return (
         <main>
-            <AnimatedHeading text={"Tue, was du liebst, liebe, was du tust."} className="text-left"/>
-            {params.repository}
+            <AnimatedHeading text={projectDetails.h1} className="text-left"/>
+            {JSON.stringify(projectDetails)}
         </main>
     )
 }

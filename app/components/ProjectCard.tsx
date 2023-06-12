@@ -19,7 +19,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({name, thumbnail, description, 
         >
             <Link
                 className="w-1/2 rounded-xl border"
-                href={slug}
+                href={`projects/${slug}`}
             >
                 <Image
                     className="rounded-xl"
@@ -50,9 +50,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({name, thumbnail, description, 
                 >
                     <a
                         className="my-1 border border-blue-500 cursor-pointer p-1 rounded text-blue-500"
+                        target="_blank"
                         href={github_url}
                     >
-                        Source Code
+                        Sourcecode
                     </a>
                 </p>
             </div>
