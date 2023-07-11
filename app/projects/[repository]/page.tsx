@@ -5,8 +5,8 @@ import React from 'react'
 
 const getProjectDetails = async (repository: string) => {
     const res = await fetch(`https://raw.githubusercontent.com/matthias-matthies/${repository}/main/.matthias-matthies/Blog.json`);
-    const json = await res.json()
-    return json
+    if (res.status == 404) return 404
+    return await res.json()
 }
 
 export default async function ProjectPage({params}: {params: {repository: string;}}) {
@@ -14,8 +14,8 @@ export default async function ProjectPage({params}: {params: {repository: string
 
     return (
         <main>
-            <AnimatedHeading text={projectDetails.h1} className="text-left"/>
-            {JSON.stringify(projectDetails)}
+            <AnimatedHeading text={projectDetails.h1 ? projectDetails.h1 : "404"} className="text-left"/>
+            {projectDetails == 404 ? "Anscheinend habe ich keine weitere Beschreibung für dieses Projekt erstellt." : JSON.stringify(projectDetails)}
         </main>
     )
 }
