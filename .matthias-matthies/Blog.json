@@ -1,4 +1,5 @@
 {
-  "h1": "Website Matthias Matthies",
-  "h2": "Requirements"
+  "title": "Website Matthias Matthies",
+  "text": "Powered by Vercel, build with Nextjs, Tailwindcss, framer-motion und locomotive-scroll ist das meine v1 personal Website.",
+  "learnings": ["Nextjs", "Vercel", "framer-motion", "locomotive-scroll", "tailwindcss"]
 }
