@@ -1,9 +1,3 @@
----
-title: Matthias Matthies Website
-date: '2023-07-16'
-tags: ['next.js', 'nextjs']
----
-
 <AnimatedHeading text="Schritt für Schritt: Eine Website mit Next.js, Vercel und Framer Motion erstellen" className="text-left"/>
 
 Vor kurzem habe ich mich entschieden, eine neue Website zu erstellen und meine Erfahrungen damit zu teilen. Ich wollte eine moderne und interaktive Website erstellen, die reibungslos läuft und ein ansprechendes Design hat. Nach einigen Recherchen entschied ich mich für die Verwendung von Next.js, Vercel und Framer Motion. In diesem Blogbeitrag werde ich die Schritte erläutern, die ich unternommen habe, um diese Website zu erstellen.
