@@ -1,21 +1,37 @@
 import AnimatedHeading from '@/app/components/AnimatedHeading'
-import React from 'react'
+import { compileMDX } from 'next-mdx-remote/rsc'
 
+const components = { AnimatedHeading };
 
-
-const getProjectDetails = async (repository: string) => {
-    const res = await fetch(`https://raw.githubusercontent.com/matthias-matthies/${repository}/main/.matthias-matthies/Blog.json`);
-    if (res.status == 404) return 404
-    return await res.json()
+interface ProjectPageParams {
+    repository: string;
 }
 
-export default async function ProjectPage({params}: {params: {repository: string;}}) {
-    const projectDetails = await getProjectDetails(params.repository)
+const getMdx = async (repository: string) => {
+    const res = await fetch(`https://raw.githubusercontent.com/matthias-matthies/${repository}/main/.matthias-matthies/Blog.md`);
+    const source = (res.status == 404) ? `404: Not Found` : await res.text();
+    const {frontmatter, content} = await compileMDX<{title: string, date: string, tags: string[]}>({
+        source,
+        components
+    })
 
+    return {
+        meta: {
+            title: frontmatter.title,
+            date: frontmatter.date,
+            tags: frontmatter.tags
+        },
+        content
+    }
+}
+
+export default async function ProjectPage({ params }: { params: ProjectPageParams}) {
+    const mdx = await getMdx(params.repository)
     return (
         <main>
-            <AnimatedHeading text={projectDetails.h1 ? projectDetails.h1 : "404"} className="text-left"/>
-            {projectDetails == 404 ? "Anscheinend habe ich keine weitere Beschreibung für dieses Projekt erstellt." : JSON.stringify(projectDetails)}
+            {
+                mdx.content
+            }
         </main>
     )
 }
