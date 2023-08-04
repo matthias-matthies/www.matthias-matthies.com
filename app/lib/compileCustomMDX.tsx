@@ -7,7 +7,7 @@ import {MDXComponents} from "mdx/types";
 const components: MDXComponents | MergeComponents | null | undefined = {
     h1: AnimatedHeading,
 }
-export async function compileCustomMDX(fileContent) {
+export async function compileCustomMDX(fileContent: string) {
     const { frontmatter, content } = await compileMDX({
         source: fileContent,
         options: { parseFrontmatter: true },
