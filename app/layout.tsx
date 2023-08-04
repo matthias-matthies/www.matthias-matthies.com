@@ -2,7 +2,7 @@ import './globals.css'
 import LayoutHeader from '@/app/components/LayoutHeader'
 import LayoutFooter from '@/app/components/LayoutFooter'
 import React from 'react'
-import TransitionEffect from "@/app/components/TransitionEffect";
+import CookieBanner from "@/app/components/CookieBanner";
 
 export const metadata = {
     title: 'Matthias Matthies',
@@ -20,6 +20,7 @@ export default function RootLayout(
     return (
         <html lang="de">
             <body className="font-mont">
+            <CookieBanner />
             <LayoutHeader />
             {children}
             <LayoutFooter />
