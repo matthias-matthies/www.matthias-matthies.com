@@ -11,7 +11,7 @@ const CookieBanner: React.FC = () => {
             {
                 isOpen ?
                 <motion.div
-                    className="fixed left-0 bottom-0 z-20 bg-blue-500 text-white px-8 py-4"
+                    className="fixed left-0 bottom-0 w-screen z-20 bg-blue-500 text-white px-8 py-4"
                     initial={{opacity: "0", transform: "translateY(100px)"}}
                     animate={{opacity: "1", transform: "translateY(0)"}}
                     transition={{duration: 0.8, delay: 0.8, ease: "easeInOut"}}
