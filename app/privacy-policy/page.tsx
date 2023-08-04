@@ -4,7 +4,7 @@ const PrivacyPolicyPage = () => {
             <article className={"prose lg:prose-xl"}>
                 <h1>Privacy Policy</h1>
 
-                <p>This privacy policy informs you about the nature, extent, and purpose of the processing of personal data (hereinafter "data") on my website www.matthias-matthies.com.</p>
+                <p>This privacy policy informs you about the nature, extent, and purpose of the processing of personal data (hereinafter &quot;data&quot;) on my website www.matthias-matthies.com.</p>
 
                 <h2>Responsible</h2>
 
