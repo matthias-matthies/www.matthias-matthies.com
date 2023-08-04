@@ -1,3 +1,5 @@
+"use client"
+
 import AnimatedHeading from '@/app/components/AnimatedHeading'
 import {compileCustomMDX} from "@/app/lib/compileCustomMDX";
 
