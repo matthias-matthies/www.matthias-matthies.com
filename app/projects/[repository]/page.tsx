@@ -1,7 +1,5 @@
 import AnimatedHeading from '@/app/components/AnimatedHeading'
-import { compileMDX } from 'next-mdx-remote/rsc'
-
-const components = { AnimatedHeading };
+import {compileCustomMDX} from "@/app/lib/compileCustomMDX";
 
 interface ProjectPageParams {
     repository: string;
@@ -10,28 +8,19 @@ interface ProjectPageParams {
 const getMdx = async (repository: string) => {
     const res = await fetch(`https://raw.githubusercontent.com/matthias-matthies/${repository}/main/.matthias-matthies/Blog.md`);
     const source = (res.status == 404) ? `404: Not Found` : await res.text();
-    const {frontmatter, content} = await compileMDX<{title: string, date: string, tags: string[]}>({
-        source,
-        components
-    })
 
-    return {
-        meta: {
-            title: frontmatter.title,
-            date: frontmatter.date,
-            tags: frontmatter.tags
-        },
-        content
-    }
+    return compileCustomMDX(source)
 }
 
 export default async function ProjectPage({ params }: { params: ProjectPageParams}) {
     const mdx = await getMdx(params.repository)
     return (
         <main>
-            {
-                mdx.content
-            }
+            <article className={"prose lg:prose-xl"}>
+                {
+                    mdx.content
+                }
+            </article>
         </main>
     )
 }

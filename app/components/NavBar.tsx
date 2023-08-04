@@ -30,7 +30,7 @@ const NavBar: React.FC = () => {
                     <LinkedInIcon />
                 </IconLink>
                 <IconLink
-                    className="w-6 mr-3"
+                    className="w-6"
                     href="https://twitter.com/MatthiasDaily"
                 >
                     <TwitterIcon />

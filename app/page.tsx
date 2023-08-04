@@ -18,10 +18,10 @@ export default function Home() {
     return (
         <main className="flex min-h-screen flex-col items-center justify-between">
             <div className='px-16 flex items-center justify-between h-screen'>
-                <div className='w-1/2'>
+                <div className='w-1/2 md:block hidden'>
                     <AnimatedImage src={heroImage} alt="Digital Art - Developer created by Midjourney" />
                 </div>
-                <div className='w-1/2'>
+                <div className='md:w-1/2'>
                     <AnimatedHeading
                         className='text-left'
                         text='Matthias Matthies, Informatik Student, Fullstack-Entwickler, Sport-Enthusiast'

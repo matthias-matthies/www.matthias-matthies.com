@@ -4,7 +4,8 @@ import {motion} from "framer-motion"
 import React from "react";
 
 interface AnimatedHeadingProps {
-    text: string;
+    text?: string;
+    children?: string;
     className?: string;
 }
 
@@ -35,7 +36,7 @@ const singleWord = {
     }
 }
 
-const AnimatedHeading: React.FC<AnimatedHeadingProps> = ({text, className = ""}) => {
+const AnimatedHeading: React.FC<AnimatedHeadingProps> = ({text = "", children = "", className = ""}) => {
     return (
         <div className={`w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden`}>
             <motion.h1
@@ -45,7 +46,17 @@ const AnimatedHeading: React.FC<AnimatedHeadingProps> = ({text, className = ""})
                 whileInView={'animate'}
             >
                 {
+                    text ? // Abfrage für mdx, weil es auch keine
                     text.split(" ").map((word, index) =>
+                        <motion.span
+                            key={word+"-"+index}
+                            className={'inline-block'}
+                            variants={singleWord}
+                        >
+                            {word}&nbsp;
+                        </motion.span>
+                    )
+                    : children.split(" ").map((word, index) =>
                         <motion.span
                             key={word+"-"+index}
                             className={'inline-block'}

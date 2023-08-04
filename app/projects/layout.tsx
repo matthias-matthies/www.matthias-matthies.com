@@ -13,7 +13,7 @@ export default function ProjectsLayout(
         }
 ) {
     return (
-        <div className={`container mx-auto`}>
+        <div className={`container mx-auto md:px-0 px-2`}>
             {children}
         </div>
     )
