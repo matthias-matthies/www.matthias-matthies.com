@@ -11,7 +11,7 @@ export async function compileCustomMDX(fileContent: string) {
     const { frontmatter, content } = await compileMDX({
         source: fileContent,
         options: { parseFrontmatter: true },
-        components
+        // components
     })
 
     return {
