@@ -3,6 +3,7 @@ import AnimatedHeading from "@/app/components/AnimatedHeading";
 import {MergeComponents} from "@mdx-js/react/lib";
 import {MDXComponents} from "mdx/types";
 
+
 const components: MDXComponents | MergeComponents | null | undefined = {
     h1: AnimatedHeading,
 }

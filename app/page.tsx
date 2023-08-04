@@ -22,10 +22,9 @@ export default function Home() {
                     <AnimatedImage src={heroImage} alt="Digital Art - Developer created by Midjourney" />
                 </div>
                 <div className='md:w-1/2'>
-                    <AnimatedHeading
-                        className='text-left'
-                        text='Matthias Matthies, Informatik Student, Fullstack-Entwickler, Sport-Enthusiast'
-                    />
+                    <AnimatedHeading>
+                        Matthias Matthies, Informatik Student, Fullstack-Entwickler, Sport-Enthusiast
+                    </AnimatedHeading>
                     <p>
                         Moin! Mein Name ist Matthias und ich befinde mich aktuell im <b>{currentSemester(new Date(2022, 10)).toString()}</b>.
                         Semester meines Informatikstudiums an der <Link target="_blank" className="text-blue-500" href="https://www.uni-bremen.de">Universität Bremen</Link>. Zusätzlich arbeite ich als Entwickler bei der <Link className="text-blue-500" href="https://www.k-evolution.de" target="_blank">K-Evolution GmbH</Link> in Sittensen.
