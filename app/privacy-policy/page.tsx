@@ -11,7 +11,7 @@ const PrivacyPolicyPage = () => {
                 <p>Responsible for the data processing on this website, I am, Matthias Matthies. Contact details are:</p>
 
                 <p>
-                    Address: Hinter der Mühle 5a, 27419 Tiste<br />
+                    Address: CENSORED<br />
                     Email: <a href="mailto:info@matthias-matthies.com">info@matthias-matthies.com</a>
                 </p>
 

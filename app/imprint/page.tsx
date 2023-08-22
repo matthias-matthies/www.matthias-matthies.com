@@ -8,9 +8,9 @@ const ImprintPage = () => {
 
                     <p>
                         Matthias Matthies<br />
-                        Hinter der Mühle 5a<br />
-                        27419 Tiste<br />
-                        Germany
+                        CENSORED <br />
+                        CENSORED <br />
+                        CENSORED
                     </p>
 
                     <h2>Contact:</h2>
