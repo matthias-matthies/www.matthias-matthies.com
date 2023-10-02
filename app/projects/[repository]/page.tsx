@@ -17,9 +17,7 @@ export default async function ProjectPage({ params }: { params: ProjectPageParam
     return (
         <main>
             <article className={"prose lg:prose-xl"}>
-                {
-                    mdx.content
-                }
+                {mdx.content}
             </article>
         </main>
     )
