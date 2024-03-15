@@ -24,12 +24,6 @@ const NavBar: React.FC = () => {
                     <GitHubIcon />
                 </IconLink>
                 <IconLink
-                    className="w-6 mr-3"
-                    href="https://www.linkedin.com/in/matthias-matthies/"
-                >
-                    <LinkedInIcon />
-                </IconLink>
-                <IconLink
                     className="w-6"
                     href="https://twitter.com/MatthiasDaily"
                 >
