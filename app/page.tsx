@@ -1,5 +1,6 @@
 import AnimatedHeading from "@/app/components/AnimatedHeading";
 import AnimatedImage from "@/app/components/AnimatedImage";
+// @ts-ignore
 import heroImage from "@/public/developer.png"
 import Link from "next/link";
 
