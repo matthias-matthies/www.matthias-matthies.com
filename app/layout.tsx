@@ -19,10 +19,6 @@ export default function RootLayout(
 ) {
     return (
         <html lang="de">
-            <link rel="stylesheet" href="https://app.kookietool.de.test/v1/style" />
-            {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-            <script src="https://app.kookietool.de.test/v1/script"></script>
-
             <body className="font-mont">
             <CookieBanner />
             <LayoutHeader />
