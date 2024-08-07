@@ -3,6 +3,7 @@ import LayoutHeader from '@/app/components/LayoutHeader'
 import LayoutFooter from '@/app/components/LayoutFooter'
 import React from 'react'
 import CookieBanner from "@/app/components/CookieBanner";
+import Script from "next/script";
 
 export const metadata = {
     title: 'Matthias Matthies',
@@ -20,7 +21,7 @@ export default function RootLayout(
     return (
         <html lang="de">
             <link rel="stylesheet" href="https://app.kookietool.de.test/v1/style" />
-            <script src="https://app.kookietool.de.test/v1/script"></script>
+            <Script src="https://app.kookietool.de.test/v1/script"></Script>
 
             <body className="font-mont">
             <CookieBanner />
