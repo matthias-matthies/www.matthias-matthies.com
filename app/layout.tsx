@@ -19,11 +19,8 @@ export default function RootLayout(
 ) {
     return (
         <html lang="de">
-
-            <!-- Kookietool -->
             <link rel="stylesheet" href="https://app.kookietool.de.test/v1/style" />
             <script src="https://app.kookietool.de.test/v1/script"></script>
-            <!-- End Kookietool -->
 
             <body className="font-mont">
             <CookieBanner />
