@@ -25,9 +25,9 @@ const NavBar: React.FC = () => {
                 </IconLink>
                 <IconLink
                     className="w-6"
-                    href="https://twitter.com/MatthiasDaily"
+                    href="https://de.linkedin.com/in/matthias-matthies"
                 >
-                    <TwitterIcon />
+                    <LinkedInIcon />
                 </IconLink>
             </nav>
         </div>
