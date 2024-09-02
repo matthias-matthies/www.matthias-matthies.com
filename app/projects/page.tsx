@@ -31,7 +31,7 @@ export default async function ProjectsPage() {
     return (
         <main>
             <AnimatedHeading>
-                Maybe in der Zukunft kommt hier neues Zeugs, momentan eher nicht. Fuck Frontend.
+                Maybe in der Zukunft kommt hier neues Zeugs, momentan eher nicht.
             </AnimatedHeading>
             <p className="mb-12">
                 Einige meiner Privaten und Uni-related Projekte.
