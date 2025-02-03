@@ -16,7 +16,7 @@ export default function Home() {
                     </AnimatedHeading>
                     <p>
                         Moin! Mein Name ist Matthias und ich befinde mich aktuell im <b>5</b>.
-                        Semester meines Informatikstudiums an der <Link target="_blank" className="text-blue-500" href="https://www.uni-bremen.de">Universität Bremen</Link>. Zusätzlich arbeite ich als Entwickler bei der <Link className="text-blue-500" href="https://www.k-evolution.de" target="_blank">K-Evolution GmbH</Link> in Sittensen.
+                        Semester meines Informatikstudiums an der <Link target="_blank" className="text-blue-500" href="https://www.uni-bremen.de">Universität Bremen</Link>. Zusätzlich arbeite ich als Entwickler bei der <Link className="text-blue-500" href="https://www.encoway.de/" target="_blank">encoway</Link> in Bremen.
                         In meiner Freizeit widme ich mich gerne sportlichen Aktivitäten und arbeite nebenbei an einigen privaten <Link className="text-blue-500" href="/projects">Programmierprojekten</Link>.
                     </p>
                 </div>
